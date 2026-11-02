@@ -1,0 +1,8 @@
+domain,rag,one_line_reason
+Applications and product health,Amber,Core product carries unsupported components and undocumented interfaces while remediation is not yet costed
+Infrastructure and cloud,Red,Aging on-prem estate has no validated cloud exit plan and carries material dual-running exposure
+Cyber and resilience,Red,Disaster recovery testing excludes the main customer platform and privileged access controls are inconsistent
+Data,Amber,Customer and product data are duplicated across platforms with limited lineage and uneven retention controls
+Vendors and contracts,Amber,Supplier concentration and near-term auto-renewals limit negotiating leverage
+IT organisation,Amber,Several critical roles are single-person dependencies and contractor coverage is high across a 600-person business
+IT cost trajectory,Green,Run cost is stable at about GBP 6m a year and broadly consistent with the size of the estate

@@ -1,0 +1,16 @@
+syn_id,lever,tower,linked_app_ids,owner_role,start_month,ramp_months,annual_value_low_gbp,annual_value_high_gbp,confidence_pct
+SYN01,Post-TSA ERP and GL consolidation onto buyer platform,Applications,APP001;APP002;APP005,Buyer CFO,13,6,185000,270000,45
+SYN02,Post-TSA finance SaaS tail consolidation,Applications,APP003;APP004;APP007;APP008;APP012;APP053,Buyer Finance Transformation Director,13,5,95000,150000,60
+SYN03,Post-TSA payroll and HR platform consolidation,Applications,APP013;APP014;APP015;APP018;APP019,Buyer HR Director,14,6,105000,170000,50
+SYN04,Post-TSA engineering toolchain consolidation,Applications,APP033;APP034;APP035;APP036;APP037;APP038,Buyer Head of Engineering,14,6,100000,160000,50
+SYN05,Post-TSA commercial platform consolidation,Applications,APP020;APP021;APP022;APP024,Buyer Chief Commercial Officer,13,5,85000,140000,60
+SYN06,Post-TSA data platform consolidation,Applications,APP049;APP050;APP051;APP052,Buyer Head of Data,14,6,115000,180000,50
+SYN07,Post-TSA hosting rationalisation for planning warehouse and maintenance apps,Infrastructure,APP028;APP029;APP030,Buyer Infrastructure Director,13,5,75000,120000,55
+SYN08,Post-TSA plant and engineering hosting consolidation,Infrastructure,APP025;APP026;APP031,Buyer Plant Director,13,5,70000,110000,55
+SYN09,Integration and file transfer platform rationalisation,Infrastructure,APP055;APP056;APP057,Buyer Integration Architect,10,4,45000,70000,70
+SYN10,Post-TSA IAM and PAM consolidation,Security,APP044;APP048,Buyer CISO,14,5,65000,100000,60
+SYN11,Security monitoring tool consolidation,Security,APP045;APP046;APP047,Buyer Security Operations Manager,11,4,50000,80000,65
+SYN12,ITSM and portfolio workflow consolidation,Service desk,APP042;APP043,Buyer IT Service Delivery Manager,9,3,42000,65000,70
+SYN13,Identity lifecycle and access request automation,Service desk,APP014;APP042;APP044,Buyer HR Operations Director,9,4,35000,55000,70
+SYN14,End-user collaboration and meeting room standardisation,End-user,APP039;APP041,Buyer CIO,10,4,48000,70000,70
+SYN15,SaaS seat and licence rationalisation for standalone HR marketing intranet and compliance apps,Governance,APP016;APP017;APP023;APP040;APP058;APP060,Buyer Procurement Director,13,5,40000,70000,60

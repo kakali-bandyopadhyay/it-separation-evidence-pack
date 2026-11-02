@@ -1,0 +1,61 @@
+app_id,name,business_function,business_owner_role,users,hosting,vendor,licence_transferable,data_entanglement,day1_criticality,shared_with_seller,one_off_cost_gbp,annual_run_cost_gbp,wave
+APP001,Core ERP,Finance & Operations,Group CFO,950,On-prem,Vendor A,Consent,High,1,Y,1250000,1850000,Wave 2
+APP002,General Ledger & Consolidation,Finance & Accounting,Group Financial Controller,240,SaaS,Vendor B,Y,Med,1,N,145000,185000,Day 1
+APP003,Accounts Payable Automation,Finance & Accounting,Shared Services Lead,320,SaaS,Vendor C,Y,Low,2,N,60000,78000,Day 1
+APP004,Accounts Receivable & Collections,Finance & Accounting,Credit Manager,180,SaaS,Vendor C,Y,Low,2,N,45000,52000,Wave 2
+APP005,Fixed Asset Register,Finance & Accounting,Group Financial Controller,90,On-prem,Vendor D,N,Med,2,N,38000,26000,Wave 2
+APP006,Treasury & FX Management,Finance & Accounting,Group Treasurer,35,SaaS,Vendor E,Consent,Med,1,N,120000,95000,Day 1
+APP007,Indirect Tax & Compliance,Finance & Accounting,Tax Director,40,SaaS,Vendor F,Y,Low,2,N,85000,72000,Wave 2
+APP008,Expense Management,Finance & Accounting,Finance Operations Manager,950,SaaS,Vendor G,Y,Low,3,N,22000,46000,Wave 3
+APP009,Procurement & Sourcing,Supply Chain,Chief Procurement Officer,260,SaaS,Vendor H,Y,Med,1,N,95000,110000,Day 1
+APP010,Supplier Portal,Supply Chain,Chief Procurement Officer,1400,SaaS,Vendor H,Consent,Med,2,N,55000,68000,Wave 2
+APP011,Customer Billing & Invoicing,Finance & Accounting,Revenue Controller,120,On-prem,Vendor I,N,High,2,Y,78000,64000,Wave 2
+APP012,Lease & Contract Accounting,Finance & Accounting,Group Financial Controller,30,SaaS,Vendor J,Y,Low,3,N,28000,21000,Wave 3
+APP013,Payroll,HR,HR Director,25,On-prem,Vendor K,N,High,1,Y,210000,240000,Wave 2
+APP014,Core HR & HRIS,HR,HR Director,1900,SaaS,Vendor L,Consent,Med,1,N,165000,195000,Day 1
+APP015,Time & Attendance,HR,HR Operations Manager,1750,SaaS,Vendor M,Y,Low,2,N,48000,62000,Wave 2
+APP016,Recruitment & Applicant Tracking,HR,Talent Acquisition Lead,220,SaaS,Vendor N,Y,Low,3,N,18000,24000,Wave 3
+APP017,Learning Management,HR,L&D Manager,1850,SaaS,Vendor O,Y,Low,3,N,15000,32000,Wave 3
+APP018,Benefits Administration,HR,Reward Manager,1800,SaaS,Vendor P,Consent,Med,2,N,35000,41000,Wave 2
+APP019,Workforce Planning & People Analytics,HR,HR Director,45,SaaS,Vendor Q,Y,Med,2,N,42000,55000,Wave 2
+APP020,Sales CRM,Sales & Marketing,VP Sales,480,SaaS,Vendor R,Consent,High,1,Y,180000,210000,Wave 2
+APP021,Customer Service Management,Sales & Marketing,Customer Service Director,160,SaaS,Vendor S,Y,Med,2,N,65000,88000,Wave 2
+APP022,Configure Price Quote,Sales & Marketing,VP Sales Operations,210,SaaS,Vendor R,Consent,Med,1,N,110000,130000,Day 1
+APP023,Marketing Automation,Sales & Marketing,Marketing Director,60,SaaS,Vendor T,N,Low,3,N,40000,58000,Wave 3
+APP024,Partner & Distributor Portal,Sales & Marketing,Channel Director,620,SaaS,Vendor U,Consent,Med,2,N,52000,66000,Wave 2
+APP025,Manufacturing Execution System,Manufacturing Operations,VP Manufacturing,900,On-prem,Vendor V,N,High,1,N,480000,390000,Day 1
+APP026,Advanced Planning & Scheduling,Manufacturing Operations,Head of Supply Planning,140,On-prem,Vendor W,N,Med,1,N,260000,180000,Day 1
+APP027,Quality Management System,Manufacturing Operations,Head of Quality,700,SaaS,Vendor X,Consent,Med,1,Y,150000,120000,Wave 2
+APP028,Statistical Process Control,Manufacturing Operations,Quality Engineering Manager,110,On-prem,Vendor W,N,Med,2,N,45000,38000,Wave 2
+APP029,Warehouse Management,Supply Chain,Logistics Director,380,On-prem,Vendor Y,N,Med,1,N,310000,220000,Day 1
+APP030,Maintenance Management (CMMS),Manufacturing Operations,Plant Engineering Manager,260,IaaS,Vendor Z,Y,Low,2,N,70000,60000,Wave 2
+APP031,Plant Historian & SCADA,Manufacturing Operations,Plant Director,150,On-prem,Vendor AA,N,High,1,N,220000,160000,Day 1
+APP032,OEE & Downtime Analytics,Manufacturing Operations,Continuous Improvement Manager,95,IaaS,Vendor AA,Y,Med,2,N,55000,48000,Wave 2
+APP033,Product Lifecycle Management,Engineering,Head of Engineering,340,On-prem,Vendor AB,Consent,Med,1,Y,320000,260000,Wave 2
+APP034,CAD & Design Tools,Engineering,Design Engineering Manager,180,On-prem,Vendor AC,N,Med,1,N,190000,145000,Day 1
+APP035,Engineering Simulation,Engineering,Chief Engineer,45,On-prem,Vendor AC,Y,Low,3,N,120000,95000,Wave 3
+APP036,Document & Drawing Control,Engineering,Engineering Systems Manager,400,SaaS,Vendor AD,Y,Med,2,N,65000,54000,Wave 2
+APP037,BOM & Configuration Management,Engineering,Head of Engineering,260,On-prem,Vendor AB,Consent,Med,2,N,140000,105000,Wave 2
+APP038,Technical Publications,Engineering,Technical Documentation Lead,55,SaaS,Vendor AD,Y,Low,3,N,30000,26000,Wave 3
+APP039,Email & Productivity Suite,Collaboration & Productivity,CIO,2400,SaaS,Vendor AE,Consent,Med,1,N,240000,520000,Day 1
+APP040,Intranet & Employee Portal,Collaboration & Productivity,Internal Communications Lead,2400,SaaS,Vendor AF,Y,Low,3,N,25000,36000,Wave 3
+APP041,Video Conferencing,Collaboration & Productivity,IT Service Manager,2200,SaaS,Vendor AE,Y,Low,2,N,18000,84000,Wave 2
+APP042,IT Service Management,IT,IT Service Delivery Manager,2400,SaaS,Vendor AG,Y,Low,1,N,90000,115000,Day 1
+APP043,Project & Portfolio Management,IT,PMO Lead,310,SaaS,Vendor AH,Y,Low,2,N,55000,70000,Wave 2
+APP044,Identity & Access Management,Information Security,CISO,2400,On-prem,Vendor AI,Consent,Med,1,Y,280000,210000,Day 1
+APP045,Endpoint Detection & Response,Information Security,CISO,2400,SaaS,Vendor AJ,Consent,Low,1,N,75000,130000,Day 1
+APP046,SIEM & Log Management,Information Security,Security Operations Manager,40,SaaS,Vendor AJ,Y,Med,1,N,160000,190000,Day 1
+APP047,Vulnerability Management,Information Security,Security Operations Manager,60,SaaS,Vendor AK,Y,Low,2,N,40000,48000,Wave 2
+APP048,Privileged Access Management,Information Security,CISO,90,On-prem,Vendor AI,Consent,Med,1,N,95000,72000,Day 1
+APP049,Enterprise Data Warehouse,Data & Analytics,Head of Data,420,On-prem,Vendor AL,Consent,Med,1,Y,420000,310000,Wave 2
+APP050,Enterprise BI & Reporting,Data & Analytics,Head of Data,950,SaaS,Vendor AM,Y,Med,2,N,110000,165000,Wave 2
+APP051,Data Integration & ETL,Data & Analytics,Data Platform Manager,70,IaaS,Vendor AN,Y,Med,2,N,85000,78000,Wave 2
+APP052,Data Catalogue & Quality,Data & Analytics,Data Governance Lead,120,SaaS,Vendor AO,Y,Low,3,N,45000,52000,Wave 3
+APP053,FP&A Planning Platform,Finance & Accounting,VP FP&A,160,SaaS,Vendor AP,Consent,Med,2,N,130000,145000,Wave 2
+APP054,IoT & Sensor Analytics,Manufacturing Operations,Digital Manufacturing Lead,55,IaaS,Vendor AQ,Y,Med,3,N,90000,66000,Wave 3
+APP055,EDI & B2B Integration,Supply Chain,Supply Chain Systems Manager,250,On-prem,Vendor AR,Consent,Med,1,N,140000,115000,Day 1
+APP056,API Gateway & Integration Platform,IT,Integration Architect,130,IaaS,Vendor AS,Y,Med,2,N,100000,88000,Wave 2
+APP057,Managed File Transfer,IT,Infrastructure Manager,85,On-prem,Vendor AT,Y,Low,2,N,35000,30000,Wave 2
+APP058,Electronic Signature,Legal & Compliance,General Counsel,600,SaaS,Vendor AU,Y,Low,3,N,20000,28000,Wave 3
+APP059,Contract Lifecycle Management,Legal & Compliance,General Counsel,180,SaaS,Vendor AV,Consent,Med,2,N,75000,62000,Wave 2
+APP060,ESG & Sustainability Reporting,Legal & Compliance,Head of Sustainability,70,SaaS,Vendor AW,Y,Low,2,N,55000,44000,Wave 2

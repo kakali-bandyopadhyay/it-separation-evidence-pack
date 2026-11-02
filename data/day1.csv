@@ -1,0 +1,51 @@
+item_id,item,workstream,owner_role,t_minus_days,gate,status,evidence_required
+D1-001,Identity provider tenant and domain design approved,Identity and email,Identity and Access Lead,120,Go,Complete,Approved identity design and domain ownership matrix
+D1-002,TSA master schedule signed priced and commencement dates confirmed,Vendor consents,TSA Commercial Lead,115,Go,Complete,Executed TSA schedule and pricing annex
+D1-003,Legal entity incorporation and tax registrations complete,Legal entity and licences,Legal Entity Director,112,Go,Complete,Certificate of incorporation and tax registration confirmations
+D1-004,Data classification and separation blueprint approved,Data separation,Data Separation Lead,110,Go,Complete,Approved separation blueprint and data classification register
+D1-005,Employee transfer list and consultation plan agreed,HR,HR Operations Director,108,Go,Complete,Signed transfer list and consultation plan
+D1-006,Chart of accounts and intercompany mapping frozen,Finance and payroll systems,Finance Systems Controller,105,Go,Complete,Frozen chart of accounts and intercompany mapping sign-off
+D1-007,WAN data centre and site connectivity design approved,Network and connectivity,Network Delivery Lead,104,Go,Complete,Approved network design and site connectivity matrix
+D1-008,Customer master and contract mapping reconciled,Customer and supplier systems,Commercial Systems Lead,100,Go,Complete,Reconciled customer and contract mapping report
+D1-009,Security architecture and segregation-of-duties review complete,Security and access,Security Architecture Lead,98,Go,Complete,Approved security architecture and segregation-of-duties assessment
+D1-010,User mailbox and device inventory reconciled,Identity and email,Identity and Access Lead,96,Go,Complete,Reconciled user mailbox and device inventory
+D1-011,Software licence assignments and true-up complete,Legal entity and licences,Licensing Manager,95,Go,Complete,Licence assignment register and true-up statement
+D1-012,Software vendor consents and assignment notices received,Vendor consents,Vendor Management Lead,90,Go,Complete,Consent letters and vendor obligation register
+D1-013,Data room retention and access schedule approved,Data separation,Data Separation Lead,88,Go,Complete,Approved retention schedule and data room access log
+D1-014,Internal announcement and FAQ approved,Comms,Communications Lead,86,Go,Complete,Approved announcement and published FAQ
+D1-015,Benefits pension and leave balance mapping complete,HR,Reward Operations Lead,85,Go,Complete,Benefits and pension mapping reconciliation
+D1-016,Primary and diverse carrier circuits ordered,Network and connectivity,Network Delivery Lead,84,Go,Complete,Carrier order confirmations and delivery dates
+D1-017,Integrated cutover plan and runbook signed off,Cutover and rollback,Cutover Manager,82,Go,Complete,Signed cutover plan and version-controlled runbook
+D1-018,Privileged access and admin domain split plan approved,Security and access,Security Architecture Lead,80,Go,Complete,Approved privileged access split plan
+D1-019,EDI and API partner testing complete,Customer and supplier systems,Integration Lead,78,Go,Complete,Partner test results and interface sign-off
+D1-020,Reverse TSA obligations and seller-side service levels confirmed,Vendor consents,TSA Commercial Lead,76,No-go,In progress,Signed reverse TSA schedule and service level annex
+D1-021,Email domain DNS delegation and SPF/DKIM plan approved,Identity and email,Email Platform Lead,75,Go,Complete,Approved DNS delegation and email authentication plan
+D1-022,Payroll parallel run and bank file validation complete,Finance and payroll systems,Payroll Manager,72,Go,Complete,Parallel run results and bank file validation sign-off
+D1-023,Intercompany agreements and transfer pricing approved,Legal entity and licences,Legal Entity Director,70,Go,Complete,Executed intercompany agreements and transfer pricing approval
+D1-024,TSA exit plans termination assistance and dependency map approved,Vendor consents,TSA Commercial Lead,68,Go,Complete,Approved exit plan per TSA service and dependency map
+D1-025,Carrier circuit delivery and failover test complete,Network and connectivity,Network Delivery Lead,65,No-go,In progress,Circuit acceptance certificates and failover test results
+D1-026,TSA service levels service credits and reporting baselines agreed,Service desk,Service Transition Manager,60,Go,Complete,Signed service level schedule and monthly reporting template
+D1-027,Customer and supplier communication issued,Comms,Communications Lead,56,Go,Complete,Issued communication and distribution log
+D1-028,TSA exit plan rehearsal and dependency handover tested,Cutover and rollback,Service Transition Manager,55,Go,Complete,Rehearsal report and dependency handover checklist
+D1-029,Tenant-to-tenant mail routing coexistence test passed,Identity and email,Email Platform Lead,52,No-go,In progress,Coexistence test results and mail routing sign-off
+D1-030,Service desk platform queues and telephony ready,Service desk,Service Desk Manager,50,Go,Complete,Queue configuration and telephony test evidence
+D1-031,HR data migration and payroll input reconciliation complete,HR,HR Operations Director,48,Go,Complete,Reconciled HR data and payroll input report
+D1-032,Payroll bank file dual-run sign-off complete,Finance and payroll systems,Payroll Manager,42,No-go,In progress,Dual-run sign-off and bank acceptance evidence
+D1-033,Regulatory filings and operating permits approved,Legal entity and licences,Compliance Director,40,Go,Complete,Filing receipts and operating permit approvals
+D1-034,Supplier portal and purchase order continuity tested,Customer and supplier systems,Procurement Systems Lead,38,Go,In progress,Supplier portal test results and open purchase order reconciliation
+D1-035,Privileged access vault split and recertification complete,Security and access,Security Operations Manager,33,No-go,Not started,Vault split evidence and access recertification report
+D1-036,TSA knowledge articles and routing rules published,Service desk,Service Transition Manager,30,Go,In progress,Published knowledge articles and routing rule test
+D1-037,Day 1 welcome pack and contact card issued,Comms,Communications Lead,26,Go,In progress,Issued welcome pack and contact card
+D1-038,Customer and vendor master segregation reconciliation complete,Data separation,Data Separation Lead,24,No-go,In progress,Segregation reconciliation report and exception log
+D1-039,Rollback decision matrix and data restore test complete,Cutover and rollback,Cutover Manager,21,Go,Complete,Rollback matrix approval and restore test results
+D1-040,TSA charges reconciled to cost baseline and invoice process tested,Finance and payroll systems,Finance Systems Controller,20,Go,In progress,Reconciliation report and sample invoice approval
+D1-041,Manager and employee Day 1 guidance issued,HR,HR Operations Director,18,Go,In progress,Issued manager guide and employee briefing record
+D1-042,Customer billing and statement continuity test passed,Customer and supplier systems,Revenue Operations Lead,16,Go,In progress,Billing test results and statement sample approval
+D1-043,ITSM queue and knowledge cutover complete,Service desk,Service Desk Manager,14,No-go,Not started,ITSM cutover checklist and queue validation
+D1-044,MFA and self-service password reset enrollment complete,Identity and email,Identity and Access Lead,12,Go,In progress,MFA enrollment report and password reset test
+D1-045,Remote access and site VPN cutover complete,Network and connectivity,Network Delivery Lead,10,Go,In progress,VPN cutover test results and remote access sign-off
+D1-046,Endpoint and email security policy enforcement verified,Security and access,Security Operations Manager,8,Go,In progress,Policy enforcement report and endpoint compliance sample
+D1-047,Status page and escalation bulletin tested,Comms,Communications Lead,6,Go,In progress,Status page test record and escalation bulletin
+D1-048,Data purge and access revocation verification complete,Data separation,Data Separation Lead,5,Go,Not started,Purge certificates and access revocation report
+D1-049,Day 1 command centre and rollback rehearsal complete,Cutover and rollback,Cutover Manager,3,No-go,In progress,Command centre roster and rollback rehearsal report
+D1-050,Day 1 hypercare bridge and go/no-go call live,Cutover and rollback,Cutover Manager,0,Go,In progress,Hypercare rota and go/no-go call minutes

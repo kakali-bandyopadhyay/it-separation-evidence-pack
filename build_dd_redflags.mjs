@@ -1,0 +1,23 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {FileBlob,SpreadsheetFile} from 'file:///C:/Users/KBand/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs';
+const root='C:/Projects/it-separation-evidence-pack',xlsx=path.join(root,'it_separation_evidence_pack.xlsx');
+function csv(t){const a=[];let r=[],c='',q=false;for(let i=0;i<t.length;i++){let x=t[i];if(q){if(x==='"'&&t[i+1]==='"'){c+='"';i++;}else if(x==='"')q=false;else c+=x;}else if(x==='"')q=true;else if(x===','){r.push(c);c='';}else if(x==='\n'){r.push(c.replace(/\r$/,''));a.push(r);r=[];c='';}else c+=x;}if(c||r.length){r.push(c.replace(/\r$/,''));a.push(r);}return a.filter(r=>r.some(x=>x!==''));}
+const data=csv(await fs.readFile(path.join(root,'data','alder_redflags.csv'),'utf8')).map((r,i)=>i? r.map(v=>/^\d+$/.test(v)?Number(v):v):r);
+const w=await SpreadsheetFile.importXlsx(await FileBlob.load(xlsx));let s=w.worksheets.getItem('DD_Redflags');try{s.delete();}catch{}s=w.worksheets.add('DD_Redflags');s.showGridlines=false;
+const d=csv(await fs.readFile(path.join(root,'data','alder_domains.csv'),'utf8'));const q=csv(await fs.readFile(path.join(root,'data','alder_questions.csv'),'utf8'));
+s.getRange('A1').values=[['Project Alder | IT due diligence red flags']];s.getRange('A2').values=[['SYNTHETIC | SIMULATED WORKED EXAMPLE | Separate target-side diligence case']];
+s.getRange('A4:B4').values=[['Scope and method','Review of application/product health, infrastructure/cloud, cyber/resilience, data, vendor contracts, IT organization, and IT cost trajectory using supplied synthetic domain and finding rows.']];
+s.getRange('A6:B6').values=[['Formula reuses App_Disposition complexity logic; it is a portfolio proxy']];
+s.getRange('B6').formulas=[['=AVERAGE(App_Disposition!$S$5:$S$64)']];
+s.getRange('A8:C8').values=[['Domain','RAG','Finding']];s.getRange('A9').getResizedRange(d.length-2,2).values=d.slice(1);
+s.getRange('A18:F18').values=[['ID','Finding','Why it matters','Value at risk low GBP','Value at risk high GBP','Recommended action']];s.getRange('A19').getResizedRange(data.length-2,5).values=data.slice(1);
+s.getRange('A26:C26').values=[['ID','Management question','Linked red flag']];s.getRange('A27').getResizedRange(q.length-2,2).values=q.slice(1);
+s.getRange('A31:B31').values=[['Limitations','Simulated, synthetic worked example. Findings and value ranges are illustrative, do not represent a real transaction, and require evidence validation. The source CSV provides no Alder application inventory; the complexity figure is explicitly a re-used portfolio proxy.']];
+s.getRange('A1:F1').format={font:{name:'Calibri',size:16,bold:true,color:'#FFFFFF'},fill:'#1F3864'};s.getRange('A2:F2').format={font:{name:'Calibri',size:10,bold:true,color:'#2E5597'},wrapText:true};
+for(const r of ['A4:B4','A6:B6','A8:C8','A18:F18','A26:C26'])s.getRange(r).format={font:{name:'Calibri',size:10,bold:true,color:'#FFFFFF'},fill:'#2E5597',wrapText:true};
+for(const r of ['A5:B5','A7:B7','A9:C15','A19:F23','A27:C29','A31:B31'])s.getRange(r).format={font:{name:'Calibri',size:10,color:'#172B4D'},wrapText:true,verticalAlignment:'top'};
+s.getRange('B6').format={font:{name:'Calibri',size:12,bold:true,color:'#000000'},numberFormat:'0.0'};s.getRange('D19:E23').format.numberFormat='£#,##0';
+for(const [c,v] of Object.entries({A:28,B:66,C:66,D:18,E:18,F:25}))s.getRange(`${c}:${c}`).format.columnWidth=v;
+await(await SpreadsheetFile.exportXlsx(w)).save(xlsx);
+console.log(JSON.stringify({xlsx,domains:d.length-1,redflags:data.length-1,questions:q.length-1}));

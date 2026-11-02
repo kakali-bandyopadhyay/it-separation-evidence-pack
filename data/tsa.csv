@@ -1,0 +1,36 @@
+svc_id,service,direction,linked_app_ids,start_date,planned_end_date,cost_basis_gbp_month,exit_dependency,exit_owner_role,extension_option_months
+TSA01,ERP platform transition and support,Seller to buyer,APP001,2027-04-01,2028-03-31,115000,TSA22,Buyer ERP Programme Director,6
+TSA02,Finance operations and planning support,Seller to buyer,APP005;APP053,2027-04-01,2027-12-31,10500,TSA24,Buyer Finance Systems Director,3
+TSA03,Billing and receivables transition,Seller to buyer,APP004;APP011,2027-04-01,2028-01-31,7500,TSA24,Buyer Revenue Operations Director,3
+TSA04,Indirect tax compliance support,Seller to buyer,APP007,2027-04-01,2027-09-30,5000,APP007,Buyer Tax Systems Lead,3
+TSA05,Supplier portal transition support,Seller to buyer,APP010,2027-04-01,2027-10-31,4500,APP010,Buyer Procurement Systems Lead,3
+TSA06,Payroll and time transition,Seller to buyer,APP013;APP015,2027-04-01,2028-03-31,18000,TSA18,Buyer HR Operations Director,6
+TSA07,Benefits administration support,Seller to buyer,APP018,2027-04-01,2027-12-31,2800,APP018,Buyer Reward Operations Lead,3
+TSA08,People analytics data transition,Seller to buyer,APP019,2027-04-01,2027-09-30,3500,APP019,Buyer People Analytics Lead,3
+TSA09,CRM transition and support,Seller to buyer,APP020,2027-04-01,2028-01-31,13500,TSA18,Buyer Commercial Systems Director,6
+TSA10,Customer service and partner portal support,Seller to buyer,APP021;APP024,2027-04-01,2027-11-30,9500,APP024,Buyer Customer Operations Director,3
+TSA11,Manufacturing planning analytics support,Seller to buyer,APP028,2027-04-01,2027-09-30,2600,APP028,Buyer Manufacturing Systems Manager,3
+TSA12,Quality management system access,Seller to buyer,APP027,2027-04-01,2028-02-29,7800,TSA25,Buyer Quality Systems Lead,6
+TSA13,Maintenance and OEE support,Seller to buyer,APP030;APP032,2027-04-01,2027-10-31,7000,APP032,Buyer Plant Engineering Systems Lead,3
+TSA14,PLM and BOM transition,Seller to buyer,APP033;APP037,2027-04-01,2028-03-31,22000,TSA28,Buyer Engineering Systems Director,6
+TSA15,Document and drawing control support,Seller to buyer,APP036,2027-04-01,2027-11-30,3500,APP036,Buyer Engineering Document Controller,3
+TSA16,Collaboration and intranet support,Seller to buyer,APP041;APP040,2027-04-01,2027-12-31,7500,TSA26,Buyer Digital Workplace Lead,3
+TSA17,Portfolio management support,Seller to buyer,APP043,2027-04-01,2027-09-30,4400,APP043,Buyer IT Service Transition Manager,3
+TSA18,Identity and access management bridge,Seller to buyer,APP044,2027-04-01,2027-10-31,13000,APP044,Buyer CISO,6
+TSA19,Vulnerability management support,Seller to buyer,APP047,2027-04-01,2027-09-30,3200,APP047,Buyer Security Operations Manager,3
+TSA20,Data warehouse and BI transition,Seller to buyer,APP049;APP050;APP051,2027-04-01,2028-02-29,34000,TSA22,Buyer Head of Data Platform,6
+TSA21,Data governance and ESG reporting support,Seller to buyer,APP060;APP052,2027-04-01,2028-03-31,6000,TSA20,Buyer Data Governance Lead,3
+TSA22,Integration platform support,Seller to buyer,APP056;APP057,2027-04-01,2027-12-31,7500,TSA29,Buyer Integration Platform Lead,3
+TSA23,Contract lifecycle and e-signature support,Seller to buyer,APP059;APP058,2027-04-01,2027-12-31,5800,APP059,Buyer Legal Operations Manager,3
+TSA24,Finance application managed support,Seller to buyer,APP002,2027-04-01,2027-09-30,10500,APP002,Buyer Financial Controller,3
+TSA25,Manufacturing execution hosting and support,Seller to buyer,APP025,2027-04-01,2027-12-31,24000,TSA29,Buyer Manufacturing IT Lead,6
+TSA26,Email and productivity transition,Seller to buyer,APP039,2027-04-01,2027-11-30,32000,TSA18,Buyer CIO,6
+TSA27,EDI and B2B managed support,Seller to buyer,APP055,2027-04-01,2027-10-31,7000,APP055,Buyer Supply Chain Systems Manager,3
+TSA28,Data centre hosting for on-prem applications,Seller to buyer,APP026;APP029;APP034,2027-04-01,2028-01-31,38000,TSA29,Buyer Infrastructure Director,6
+TSA29,Wide area network and site connectivity,Seller to buyer,APP056;APP057,2027-04-01,2027-12-31,21000,APP057,Buyer Network Manager,3
+TSA30,Service desk and end-user support,Seller to buyer,APP042,2027-04-01,2027-11-30,16000,TSA18,Buyer IT Service Delivery Manager,3
+TSA31,Security operations centre monitoring,Seller to buyer,APP045;APP046,2027-04-01,2028-01-31,14000,TSA18,Buyer CISO,3
+TSA32,Payroll data extracts for retained seller employees,Buyer to seller,APP013,2027-04-01,2028-03-31,6000,TSA06,Seller HR Director,3
+TSA33,Quality records access for retained contracts,Buyer to seller,APP027,2027-04-01,2028-02-29,4500,TSA12,Seller Quality Director,3
+TSA34,Legacy data extracts and reporting,Buyer to seller,APP050;APP052,2027-04-01,2028-02-29,9000,TSA20,Seller Head of Data,3
+TSA35,Contract archive and e-signature access,Buyer to seller,APP058;APP059,2027-04-01,2027-12-31,3200,TSA23,Seller General Counsel,3

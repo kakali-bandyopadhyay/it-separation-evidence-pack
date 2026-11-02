@@ -1,0 +1,4 @@
+q_id,question,linked_rf_id
+Q1,What evidence supports the current disaster recovery coverage and privileged access model and which remediation is committed before completion?,RF1
+Q2,Which production workloads remain on end-of-support infrastructure and what validated cloud exit plan and dual-running cost have been approved?,RF2
+Q3,How much engineering capacity is consumed by defect remediation and which roadmap commitments depend on the undocumented interfaces?,RF3

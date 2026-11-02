@@ -1,0 +1,31 @@
+ms_id,phase,workstream,milestone,owner_role,target_day,dependency_id
+MS01,Day 1,Applications,Confirm TSA exit scope and application disposition baseline for ERP and finance apps,Buyer ERP Programme Director,1,TSA01
+MS02,Day 1,Infrastructure,Stand up the joint infrastructure exit office for network and hosting services,Buyer Infrastructure Director,1,TSA29
+MS03,Day 1,Security,Confirm security exit criteria and access evidence for identity and monitoring services,Buyer CISO,1,TSA18
+MS04,Day 1,Data,Freeze data separation and extraction scope for the warehouse and reporting chain,Buyer Head of Data Platform,1,TSA20
+MS05,Day 1,Vendors and contracts,Issue TSA exit mobilisation notices and confirm commercial contacts for all services,Buyer TSA Commercial Manager,1,TSA01
+MS06,Day 1,People and service desk,Mobilise the TSA exit PMO and service desk bridge,Buyer Service Transition Manager,1,TSA30
+MS07,Days 2-30,Applications,Baseline application volumes interfaces and exit criteria for ERP and data services,Buyer ERP Programme Director,8,MS01
+MS08,Days 2-30,Infrastructure,Validate the network and hosting dependency chain across integration and data centre services,Buyer Network Manager,10,TSA29
+MS09,Days 2-30,Security,Complete the identity dependency assessment for payroll CRM email and security monitoring,Buyer CISO,12,MS03
+MS10,Days 2-30,Data,Agree extraction retention and handback design for warehouse reporting and reverse data services,Buyer Data Governance Lead,15,MS04
+MS11,Days 2-30,Vendors and contracts,Confirm exit obligations notice periods and extension options for the top ten TSA services,Buyer Vendor Management Lead,18,MS05
+MS12,Days 2-30,People and service desk,Map service desk knowledge roles and escalation paths for the TSA exit,Buyer Service Desk Manager,20,TSA30
+MS13,Days 2-30,Applications,Mobilise exit squads for finance operations billing and ledger services,Buyer Finance Systems Director,22,TSA24
+MS14,Days 2-30,Infrastructure,Confirm the data centre exit design for planning warehouse and CAD applications,Buyer Infrastructure Director,25,TSA28
+MS15,Days 31-60,Applications,Complete the ERP and integration exit design including dependency handover points,Buyer ERP Programme Director,35,TSA22
+MS16,Days 31-60,Applications,Complete the payroll and time exit design with identity and access dependencies,Buyer HR Operations Director,38,TSA06
+MS17,Days 31-60,Security,Agree the privileged access and monitoring transition plan for security operations,Buyer Security Operations Manager,40,MS09
+MS18,Days 31-60,Data,Approve the data extraction test plan for warehouse reporting and reverse data services,Buyer Head of Data Platform,42,MS10
+MS19,Days 31-60,Vendors and contracts,Finalise TSA exit schedules and acceptance evidence requirements with sellers,Buyer TSA Commercial Manager,45,MS11
+MS20,Days 31-60,People and service desk,Complete the service desk transition runbook and knowledge acceptance criteria,Buyer IT Service Delivery Manager,48,MS12
+MS21,Days 31-60,Infrastructure,Complete the network and hosting exit design for data centre and site connectivity services,Buyer Network Manager,52,MS14
+MS22,Days 31-60,Applications,Validate the PLM and manufacturing execution exit design across the quality and hosting chain,Buyer Engineering Systems Director,55,TSA14
+MS23,Days 61-100,Applications,Start exit rehearsal planning for ERP and its integration dependency,Buyer ERP Programme Director,62,MS15
+MS24,Days 61-100,Security,Test identity exit reporting and access revocation evidence,Buyer CISO,65,MS16
+MS25,Days 61-100,Data,Run the first data extraction rehearsal for warehouse and reverse reporting services,Buyer Head of Data Platform,70,MS18
+MS26,Days 61-100,Vendors and contracts,Confirm exit acceptance criteria and service credit evidence for ERP and data services,Buyer TSA Commercial Manager,75,MS19
+MS27,Days 61-100,People and service desk,Rehearse service desk knowledge transfer and ticket continuity,Buyer Service Desk Manager,78,MS20
+MS28,Days 61-100,Infrastructure,Rehearse network failover and site connectivity handover,Buyer Network Manager,82,MS21
+MS29,Days 61-100,Applications,Complete the exit readiness assessment for finance operations billing and ledger services,Buyer Revenue Operations Director,88,TSA24
+MS30,Days 61-100,Data,Approve the data destruction and handback plan for governance and reverse reporting services,Buyer Data Governance Lead,95,MS25
