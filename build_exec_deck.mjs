@@ -164,12 +164,40 @@ const addChart=(slide,type,config)=>{const chart=slide.charts.add(type,config);a
   const s=p.slides.add();head(s,`One-off separation ${compactGBP(oneOffCost)}; one-time cost to separate ${compactGBP(oneTimeTotal)}`,7);
   addText(s,'Bridge A | Steady-state annual IT run-rate (synthetic)',56,160,550,28,17,C.navy,true);
   addText(s,'Bridge B | Day 1 to planned TSA exit (synthetic)',642,160,550,28,17,C.navy,true);
-  const chartStyle={hasLegend:false,barOptions:{direction:'bar',grouping:'clustered',gapWidth:55},dataLabels:{showValue:true,position:'outEnd',numberFormatCode:'#,##0'},xAxis:{numberFormatCode:'#,##0',majorGridlines:{style:'solid',fill:'#E4E7EC',width:1}},chartFill:'none',chartLine:{style:'solid',fill:'none',width:0},plotAreaFill:'none',plotAreaLine:{style:'solid',fill:'none',width:0}};
-  addChart(s,'bar',{position:{left:56,top:195,width:550,height:390},categories:bridgeA.map(r=>String(r[0])),series:[{name:'GBP per year',values:bridgeA.map(r=>workbookNumber(r[1])),fill:C.blue}],...chartStyle});
-  addChart(s,'bar',{position:{left:642,top:195,width:550,height:390},categories:bridgeB.map(r=>String(r[0])),series:[{name:'GBP',values:bridgeB.map(r=>workbookNumber(r[1])),fill:C.blue}],...chartStyle});
+  const a=bridgeA.map(r=>workbookNumber(r[1])), b=bridgeB.map(r=>workbookNumber(r[1]));
+  const waterfall=(categories,offsets,heights,labels,colors,left,max,majorUnit)=>addChart(s,'bar',{
+    position:{left,top:198,width:550,height:370},categories,
+    series:[
+      {name:'Offset',values:offsets,fill:'none',line:{style:'solid',fill:'none',width:0}},
+      {name:'Bridge value',values:heights,fill:C.green,points:colors.map((fill,idx)=>({idx,fill}))}
+    ],
+    hasLegend:false,barOptions:{direction:'column',grouping:'stacked',gapWidth:65,overlap:100},
+    xAxis:{tickLabelPosition:'low',textStyle:{fill:C.gray,fontSize:10},line:{style:'solid',fill:C.line,width:1}},
+    yAxis:{min:0,max,majorUnit,numberFormatCode:'£0,,"m"',textStyle:{fill:C.gray,fontSize:10},majorGridlines:{style:'solid',fill:'#E4E7EC',width:1},line:{style:'solid',fill:C.line,width:1}},
+    chartFill:'none',chartLine:{style:'solid',fill:'none',width:0},plotAreaFill:'none',plotAreaLine:{style:'solid',fill:'none',width:0}
+  });
+  const compactMillions=n=>`£${(Number(n)/1000000).toFixed(1)}m`;
+  const aLabels=[compactMillions(a[0]),`+${compactMillions(a[1])}`,compactMillions(a[2]),`-${compactMillions(a[3])}`,compactMillions(a[4])];
+  const bLabels=[compactMillions(b[0]),`+${compactMillions(b[1])}`,`+${compactMillions(b[2])}`,compactMillions(b[4]),`+${compactMillions(b[3])}`,compactMillions(b[5])];
+  waterfall(['Allocated\nbaseline','+ Dis-synergy','Standalone\n(subtotal)','- Synergies','Target\n(total)'],[0,a[0],0,a[4],0],[a[0],a[1],a[2],a[3],a[4]],aLabels,[C.navy,C.green,C.navy,C.red,C.navy],56,17000000,4000000);
+  waterfall(['Day 1','Wave 2','Wave 3','One-off\n(subtotal)','+ TSA','Total'],[0,b[0],b[0]+b[1],0,b[4],0],[b[0],b[1],b[2],b[4],b[3],b[5]],bLabels,[C.green,C.green,C.green,C.navy,C.green,C.navy],642,14000000,4000000);
+  const addOutsideLabels=(labels,levels,left,count,max)=>{
+    const chartLeft=left, chartWidth=550, plotLeft=57, plotWidth=482, plotBottom=530, plotHeight=320, labelWidth=82;
+    const step=plotWidth/count;
+    labels.forEach((label,i)=>{
+      const x=chartLeft+plotLeft+step*(i+0.5), y=plotBottom-(levels[i]/max)*plotHeight-22;
+      addText(s,label,x-labelWidth/2,y,labelWidth,20,11,C.text,true,{style:{alignment:'center'}});
+    });
+  };
+  addOutsideLabels(aLabels,[a[0],a[0]+a[1],a[2],a[2],a[4]],56,5,17000000);
+  addOutsideLabels(bLabels,[b[0],b[0]+b[1],b[0]+b[1]+b[2],b[4],b[4]+b[3],b[5]],642,6,14000000);
+  rect(s,56,578,10,10,C.green);addText(s,'Increase',72,572,80,22,12,C.gray,true);
+  rect(s,150,578,10,10,C.red);addText(s,'Decrease',166,572,84,22,12,C.gray,true);
+  rect(s,250,578,10,10,C.navy);addText(s,'Subtotal / total',266,572,140,22,12,C.gray,true);
   addText(s,'One-time cost to separate (one-off + TSA) includes planned buyer TSA fees. TSA fees replace standalone run cost for covered services during the TSA period; they are not added to the run-rate.',56,606,1130,24,14,C.gray,true);
-  addText(s,'SYN13 shares apps with SYN10 and SYN12 by design: process savings, not tool savings.',56,638,1120,20,13,C.gray,true);
-  notes(s,'Bridge A is an annual steady-state run-rate bridge through the synergy-adjusted target. Bridge B is a one-time separation total through planned buyer TSA exit; TSA fees replace covered standalone run cost during the term. SYN13 overlap is intentional process saving.','Cost_Synergy; Dashboard');
+  addText(s,'Labels rounded to £0.1m; figures may not sum due to rounding.',56,634,1120,20,13,C.gray,true);
+  addText(s,'SYN13 shares apps with SYN10 and SYN12 by design: process savings, not tool savings.',56,654,1120,20,13,C.gray,true);
+  notes(s,`Bridge A (annual GBP): allocated baseline ${fmtGBP(a[0])}; + dis-synergy ${fmtGBP(a[1])}; standalone subtotal ${fmtGBP(a[2])}; - identified synergies ${fmtGBP(a[3])}; target run-rate ${fmtGBP(a[4])}. Bridge B (GBP): Day 1 ${fmtGBP(b[0])}; Wave 2 ${fmtGBP(b[1])}; Wave 3 ${fmtGBP(b[2])}; one-off subtotal ${fmtGBP(b[4])}; + buyer TSA fees ${fmtGBP(b[3])}; total ${fmtGBP(b[5])}. TSA fees replace covered standalone run cost during the term. SYN13 overlap is intentional process saving.`,'Cost_Synergy; Dashboard');
 }
 // 8. 100-day plan and decisions
 {
